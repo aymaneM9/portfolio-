@@ -3,14 +3,8 @@ import {
   backend,
   creator,
   web,
-  carrent,
-  jobit,
-  tripguide,
 } from "../assets";
-import mooup_logo from "/mooup_logo.png"
-import pos_logo from "/pos_logo.png"
 import alfia_logo from "/alfia_logo.png"
-import brikool_logo from "/brikool_logo.png"
 import html from "/html.png";
 import css from "/css.png";
 import javascript from "/javascript.png";
@@ -155,7 +149,7 @@ const technologies = [
     name: "Vmware",
     icon: "/vmware-logo.webp",
   },
-  
+
 ];
 
 
@@ -163,58 +157,58 @@ const technologies = [
 
 const experiences = [
   {
-    title: "MOOUP",
-    company_name: "MOOUP",
-    icon: mooup_logo,
-    iconBg: "#383E56",
-    date: "2025",
-    points: [
-      "Built a food delivery super app ecosystem consisting of 3 mobile apps (Customer, Delivery, Restaurant) and 2 web applications (Customer Website & Admin Dashboard).",
-      "Designed scalable backend services using Laravel & MySql, ensuring smooth multi-role functionality and performance.",
-      "Implemented secure authentication, order tracking, and real-time updates for seamless user experiences.",
-      "Collaborated with designers and product teams to deliver an intuitive and efficient food delivery platform.",
-    ],
-  },
-  {
-    title: "ALFIA SYSTEM",
-    company_name: "ALFIA",
+    title: "Software Developer",
+    company_name: "Alfia Capital",
     icon: alfia_logo,
     iconBg: "#E6DEDD",
-    date: "2024 - 2025",
+    date: "March 2025 - Present ",
     points: [
-      "Developed a complete venture builder system, integrating tools for project management, resource allocation, and team collaboration.",
-      "Created responsive and scalable web applications using React.js for the frontend and Node.js/Express.js for the backend.",
-      "Implemented data-driven dashboards with role-based access to enhance decision-making for stakeholders.",
-      "Worked closely with cross-functional teams to optimize workflows and system performance.",
+      "Contributing to innovative projects in a dynamic startup environment.",
+      "Collaborating with talented teams to design, build, and optimize scalable software solutions that drive business growth.",
+      "Leveraging technical skills and passion for problem-solving to deliver high-performance applications.",
+      "Continuously learning from industry-leading professionals to improve development practices."
     ],
   },
   {
-    title: "BRIKOOL",
-    company_name: "BRIKOOL",
-    icon: brikool_logo,
+    title: "Software Developer Intern",
+    company_name: "MOONGRAPH",
+    icon: "/moon-logo.png",
     iconBg: "#383E56",
-    date: "2024",
+    date: "December 2024 - February 2025 (3 months)",
     points: [
-      "Developed a feature-rich home services platform connecting clients with professional service providers in multiple categories (cleaning, plumbing, electrical, etc.).",
-      "Built a modern and responsive UI using React.js and Material-Tailwind, ensuring accessibility and user-friendliness.",
-      "Implemented JWT-based secure authentication, multilingual support, dark mode, and real-time chat for seamless communication.",
-      "Developed a React Native mobile app for cross-platform access and deployed the system on Vercel for scalability and reliability.",
+      "Developed a company system application using the MERN stack (MongoDB, Express.js, React, Node.js).",
+      "Contributed to 50% of the project, focusing on both front-end and back-end development.",
+      "Improved system functionality and performance through collaborative development."
     ],
   },
   {
-    title: "POS & Inventory System",
-    company_name: "POS & Inventory System",
-    icon: pos_logo,
+    title: "Web Developer",
+    company_name: "ALGOLUS - Centre Algo Academy",
+    icon: "/algo-logo.png",
     iconBg: "#E6DEDD",
-    date: "2023 - 2024",
+    date: "February 2023 - April 2023 (3 months)",
     points: [
-      "Designed and developed two web interfaces: an Administrator Dashboard and a Cashier Panel, tailored for retail operations.",
-      "Implemented inventory management, sales tracking, and user management with an intuitive admin dashboard.",
-      "Developed a mobile app for servers to handle real-time order management, ensuring seamless collaboration across roles.",
-      "Optimized system performance for fast transactions and efficient multi-device usage.",
+      "Developed a parapharmacy management system during a second internship.",
+      "Built backend services with Laravel to handle inventory and user management.",
+      "Created a dynamic frontend using React and a mobile app with React Native.",
+      "Integrated RESTful APIs to connect frontend, backend, and mobile functionalities."
+    ],
+  },
+  {
+    title: "Laravel Developer",
+    company_name: "ALGOLUS - Centre Algo Academy",
+    icon: "/algo-logo.png",
+    iconBg: "#383E56",
+    date: "June 2022 - August 2022 (3 months)",
+    points: [
+      "Developed a full stack library management system using Laravel.",
+      "Implemented database schemas and user authentication.",
+      "Created a responsive design to enhance usability across devices.",
+      "Ensured system functionality through thorough testing and debugging."
     ],
   },
 ];
+
 
 const testimonials = [
   {
@@ -273,7 +267,7 @@ const projects = [
 
     ],
     image: "/alfia-preview.png",
-    source_code_link: "https://app.alfia.com.sa", 
+    source_code_link: "https://app.alfia.com.sa",
   },
   {
     name: "BRIKOOL",
@@ -289,7 +283,32 @@ const projects = [
 
     ],
     image: "/brikool-preview.png",
-    source_code_link: "https://brikool-client-lilac.vercel.app/", 
+    source_code_link: "https://brikool-client-lilac.vercel.app/",
+  },
+  {
+    name: "POS & Inventory System",
+    description: "For this project, I developed two user interfaces: one for the administrator dashboard and another for the cashier. The system also includes a mobile app for servers, ensuring seamless communication and functionality across all roles. The administrator dashboard provides full control over inventory, sales reports, and user management, while the cashier interface is streamlined for quick and efficient transactions. The mobile app facilitates easy order management for servers.",
+    tags: [
+      { name: "React", color: "text-blue-500" },
+      { name: "React Native", color: "text-green-500" },
+      { name: "Laravel", color: "text-yellow-500" },
+      { name: "Tailwind", color: "text-purple-500" },
+      { name: "MySql", color: "text-red-500" },
+    ],
+    image: "/pos-preview.png",
+    source_code_link: "https://github.com/AYMANEMTS/PointOfSales",
+  },
+  {
+    name: "E-Commerce",
+    description: "This project includes two interfaces: one for the admin dashboard and another for the customer interface. The admin dashboard allows for managing products, orders, and user interactions, while the customer interface provides a smooth shopping experience, enabling users to browse products, place orders, and choose between online payments or cash on delivery. The integration of multiple payment options enhances user convenience and flexibility.",
+    tags: [
+      { name: "React", color: "text-blue-500" },
+      { name: "Laravel", color: "text-yellow-500" },
+      { name: "Tailwind", color: "text-purple-500" },
+      { name: "MySql", color: "text-red-500" },
+    ],
+    image: "/ecom.png",
+    source_code_link: "https://github.com/AYMANEMTS/eCommerce",
   },
 ];
 

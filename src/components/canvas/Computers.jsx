@@ -9,8 +9,8 @@ const Computers = ({ isMobile }) => {
 
   // Memoize the scale and position to prevent unnecessary recalculations
   const scale = useMemo(() => isMobile ? 0.7 : 0.75, [isMobile]);
-  const position = useMemo(() => 
-    isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5], 
+  const position = useMemo(() =>
+    isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5],
     [isMobile]
   );
 
@@ -61,24 +61,24 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    <Canvas
-      frameloop='demand'
-      shadows
-      dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ 
-        preserveDrawingBuffer: true,
-        powerPreference: "high-performance",
-        antialias: true,
-        stencil: false,
-        depth: true
-      }}
-      onCreated={({ gl }) => {
-        gl.setClearColor('#050816', 1);
-        gl.shadowMap.enabled = true;
-        gl.shadowMap.type = 2;
-      }}
-    >
+      <Canvas
+          frameloop="always"
+          shadows
+          dpr={[1, 2]}
+          camera={{ position: [20, 3, 5], fov: 25 }}
+          gl={{
+              preserveDrawingBuffer: true,
+              powerPreference: "high-performance",
+              antialias: true,
+              alpha: true,           // 👈 allow transparency
+          }}
+          style={{ position: "absolute", top: 0, left: 0, zIndex: 0 }}
+          onCreated={({ gl }) => {
+              gl.setClearColor(0x000000, 0); // 👈 transparent background
+              gl.shadowMap.enabled = true;
+              gl.shadowMap.type = 2;
+          }}
+      >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}

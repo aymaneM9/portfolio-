@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function Technologies() {
   return (
     <motion.div
-      className="flex flex-row flex-wrap justify-center gap-12 mx-[135px]"
+      className="flex flex-row flex-wrap justify-center gap-12 mx-[10px] md:mx-[135px]"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
